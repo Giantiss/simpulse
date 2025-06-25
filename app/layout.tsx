@@ -7,8 +7,8 @@ import { Toaster } from '@/components/ui/toaster';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'SitePulse | Construction Site Management',
-  description: 'All-in-one construction site management system for safety, materials, workforce and communication',
+  title: 'FinFlow | Modern Financial Management Platform',
+  description: 'Streamline payments, manage cash flow, and scale your business with our comprehensive fintech platform.',
 };
 
 export default function RootLayout({

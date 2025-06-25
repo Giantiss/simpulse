@@ -6,15 +6,16 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { signOut } from 'next-auth/react';
 import { 
-  HardHat, 
-  Package2, 
+  CreditCard, 
+  TrendingUp, 
   Users, 
-  MessageSquare, 
-  Home, 
   Settings, 
+  Home, 
   Bell, 
   Menu, 
-  LogOut
+  LogOut,
+  DollarSign,
+  BarChart3
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
@@ -42,24 +43,24 @@ const navItems: NavItem[] = [
     icon: Home,
   },
   {
-    title: 'SafeSite',
-    href: '/dashboard/safesite',
-    icon: HardHat,
+    title: 'Payments',
+    href: '/dashboard/payments',
+    icon: CreditCard,
   },
   {
-    title: 'BuildTrack',
-    href: '/dashboard/buildtrack',
-    icon: Package2,
+    title: 'Analytics',
+    href: '/dashboard/analytics',
+    icon: TrendingUp,
   },
   {
-    title: 'LabourLink',
-    href: '/dashboard/labourlink',
-    icon: Users,
+    title: 'Accounts',
+    href: '/dashboard/accounts',
+    icon: DollarSign,
   },
   {
-    title: 'ConTakt',
-    href: '/dashboard/contakt',
-    icon: MessageSquare,
+    title: 'Reports',
+    href: '/dashboard/reports',
+    icon: BarChart3,
   },
   {
     title: 'Settings',
@@ -101,8 +102,8 @@ export function DashboardLayout({ children, user }: DashboardLayoutProps): JSX.E
                 className="flex items-center gap-2 text-lg font-semibold"
                 onClick={() => setOpen(false)}
               >
-                <HardHat className="h-6 w-6" />
-                <span>SitePulse</span>
+                <CreditCard className="h-6 w-6" />
+                <span>FinFlow</span>
               </Link>
               {navItems.map((item) => (
                 <Link
@@ -122,8 +123,8 @@ export function DashboardLayout({ children, user }: DashboardLayoutProps): JSX.E
           </SheetContent>
         </Sheet>
         <Link href="/" className="flex items-center gap-2 md:mr-4">
-          <HardHat className="h-6 w-6" />
-          <span className="text-lg font-bold tracking-tight hidden md:inline-block">SitePulse</span>
+          <CreditCard className="h-6 w-6" />
+          <span className="text-lg font-bold tracking-tight hidden md:inline-block">FinFlow</span>
         </Link>
         <nav className="hidden flex-col md:flex md:flex-row md:items-center md:gap-5 md:text-sm">
           {navItems.map((item) => (

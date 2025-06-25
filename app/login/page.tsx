@@ -3,8 +3,8 @@ import { requireNoAuth } from '@/lib/auth';
 import LoginForm from './login-form';
 
 export const metadata: Metadata = {
-    title: 'Login - SitePulse',
-    description: 'Login to your SitePulse account',
+    title: 'Login - FinFlow',
+    description: 'Login to your FinFlow account',
 };
 
 export default async function LoginPage() {

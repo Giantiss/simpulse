@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { HardHat, Package2, Users, MessageSquare, ChevronRight, Menu, X } from 'lucide-react';
+import { CreditCard, TrendingUp, Shield, Zap, ChevronRight, Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { HeroBanner } from './hero-banner';
 import { FeatureSection } from './feature-section';
@@ -19,8 +19,8 @@ export default function LandingPage() {
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
-            <HardHat className="h-6 w-6 text-primary" />
-            <span className="text-xl font-bold">SitePulse</span>
+            <CreditCard className="h-6 w-6 text-primary" />
+            <span className="text-xl font-bold">FinFlow</span>
           </div>
           
           {/* Desktop Nav */}
@@ -30,6 +30,9 @@ export default function LandingPage() {
             </Link>
             <Link href="#testimonials" className="text-sm font-medium hover:text-primary">
               Testimonials
+            </Link>
+            <Link href="#pricing" className="text-sm font-medium hover:text-primary">
+              Pricing
             </Link>
             <Link href="#contact" className="text-sm font-medium hover:text-primary">
               Contact
@@ -41,7 +44,7 @@ export default function LandingPage() {
             </Button>
             <Button asChild size="sm">
               <Link href="/dashboard">
-                Get Started
+                Start Free Trial
               </Link>
             </Button>
           </nav>
@@ -78,6 +81,13 @@ export default function LandingPage() {
               Testimonials
             </Link>
             <Link 
+              href="#pricing" 
+              className="text-base font-medium hover:text-primary"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Pricing
+            </Link>
+            <Link 
               href="#contact" 
               className="text-base font-medium hover:text-primary"
               onClick={() => setMobileMenuOpen(false)}
@@ -91,7 +101,7 @@ export default function LandingPage() {
             </Button>
             <Button asChild className="w-full mt-2">
               <Link href="/dashboard" onClick={() => setMobileMenuOpen(false)}>
-                Get Started
+                Start Free Trial
               </Link>
             </Button>
           </nav>

@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { HardHat } from 'lucide-react';
+import { CreditCard } from 'lucide-react';
 
 export default function LoginForm(): JSX.Element {
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -26,11 +26,11 @@ export default function LoginForm(): JSX.Element {
             <Card className="w-full max-w-md">
                 <CardHeader className="space-y-1">
                     <div className="flex items-center gap-2 mb-2">
-                        <HardHat className="h-6 w-6" />
-                        <CardTitle className="text-2xl font-bold">Sign in to SitePulse</CardTitle>
+                        <CreditCard className="h-6 w-6" />
+                        <CardTitle className="text-2xl font-bold">Sign in to FinFlow</CardTitle>
                     </div>
                     <CardDescription>
-                        Enter your email and password to access your account
+                        Enter your email and password to access your financial dashboard
                     </CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -41,7 +41,7 @@ export default function LoginForm(): JSX.Element {
                                 id="email"
                                 name="email"
                                 type="email"
-                                placeholder="john@example.com"
+                                placeholder="john@company.com"
                                 required
                             />
                         </div>

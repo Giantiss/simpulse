@@ -5,25 +5,25 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
 const testimonials = [
   {
-    name: 'John Smith',
-    role: 'Project Manager',
-    company: 'BuildCo Construction',
-    image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg',
-    content: 'SitePulse has transformed how we manage our construction sites. The safety tracking features are invaluable.',
-  },
-  {
-    name: 'Sarah Johnson',
-    role: 'Safety Coordinator',
-    company: 'Johnson Builders',
+    name: 'Sarah Chen',
+    role: 'CEO',
+    company: 'TechStart Inc',
     image: 'https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg',
-    content: 'The real-time incident reporting has helped us maintain an impeccable safety record.',
+    content: 'FinFlow transformed our payment processing. We reduced transaction costs by 40% and improved cash flow visibility.',
   },
   {
-    name: 'Mike Wilson',
-    role: 'Site Supervisor',
-    company: 'Wilson & Sons',
+    name: 'Marcus Johnson',
+    role: 'CFO',
+    company: 'GrowthCorp',
     image: 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg',
-    content: 'Material tracking with BuildTrack has eliminated wastage and improved our efficiency.',
+    content: 'The analytics dashboard gives us insights we never had before. Financial forecasting has never been easier.',
+  },
+  {
+    name: 'Emily Rodriguez',
+    role: 'Finance Director',
+    company: 'ScaleUp Solutions',
+    image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg',
+    content: 'Security and compliance were our biggest concerns. FinFlow exceeded our expectations on both fronts.',
   },
 ];
 
@@ -33,10 +33,10 @@ export function TestimonialSection() {
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8 sm:mb-12">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">
-            Trusted by Industry Leaders
+            Trusted by Finance Leaders
           </h2>
           <p className="mx-auto max-w-[700px] text-base sm:text-lg text-gray-500 dark:text-gray-400">
-            See what construction professionals are saying about SitePulse.
+            See what finance professionals are saying about FinFlow.
           </p>
         </div>
         <div className="grid gap-4 sm:gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
